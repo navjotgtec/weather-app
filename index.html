@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,49 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <h1>Weather App</h1>
     <div class="search">
       <input type="text" id="city-input" placeholder="Enter city name">
-      <button id="search-btn">Search</button>
+      <button id="search-btn"><i class="fas fa-search"></i></button>
     </div>
     <div class="weather-info">
+      <div id="weather-icon">
+        <img src="" alt="Weather Icon" id="icon">
+      </div>
       <h2 id="city-name">City Name</h2>
-      <p id="temperature">Temperature: --°C</p>
-      <p id="weather-condition">Weather: --</p>
-      <p id="humidity">Humidity: --%</p>
-      <p id="wind-speed">Wind Speed: -- m/s</p>
+      <p id="temperature">--°C</p>
+      <p id="weather-condition">--</p>
+      <div class="details">
+        <p id="humidity"><i class="fas fa-tint"></i> --%</p>
+        <p id="wind-speed"><i class="fas fa-wind"></i> -- m/s</p>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Weather App</h1>
-    <div class="search">
-      <input type="text" id="city-input" placeholder="Enter city name">
-      <button id="search-btn">Search</button>
-    </div>
-    <div class="weather-info">
-      <h2 id="city-name">City Name</h2>
-      <p id="temperature">Temperature: --°C</p>
-      <p id="weather-condition">Weather: --</p>
-      <p id="humidity">Humidity: --%</p>
-      <p id="wind-speed">Wind Speed: -- m/s</p>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
->>>>>>> 7b702e5450c5e2ce2f28a7e4eade810dba2069a9
 </html>

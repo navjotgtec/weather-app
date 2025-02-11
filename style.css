@@ -1,7 +1,8 @@
-<<<<<<< HEAD
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,103 +11,88 @@ body {
 }
 
 .container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   text-align: center;
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
 }
 
 h1 {
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .search {
-  margin-bottom: 20px;
-}
-
-input {
-  padding: 10px;
-  width: calc(100% - 90px);
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px;
-  border: none;
-  background: #007bff;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #0056b3;
-}
-
-.weather-info {
-  display: none; /* Hidden by default */
-}
-
-.weather-info p {
-  margin: 5px 0;
-=======
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 300px;
-  width: 100%;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.search {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 input {
-  padding: 10px;
-  width: calc(100% - 90px);
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 0.75rem;
+  width: 70%;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  font-size: 1rem;
 }
 
 button {
-  padding: 10px;
+  padding: 0.75rem 1.5rem;
   border: none;
-  background: #007bff;
+  background: #ff6f61;
   color: white;
-  border-radius: 5px;
+  border-radius: 0 25px 25px 0;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background: #0056b3;
+  background: #ff3b2f;
 }
 
 .weather-info {
   display: none; /* Hidden by default */
 }
 
-.weather-info p {
-  margin: 5px 0;
->>>>>>> 7b702e5450c5e2ce2f28a7e4eade810dba2069a9
+#weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+#city-name {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+#temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+#weather-condition {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.details p {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.details i {
+  margin-right: 0.5rem;
 }
